@@ -42,6 +42,17 @@ function makeGrid(rows, cols) {
             else if (currMode === 'erase'){event.target.style.backgroundColor = '#ddd'}
 
         }, false);
+        gridItems[i].addEventListener("click", function(event){
+            if (currMode==='black'){event.target.style.backgroundColor = "black";}
+            else if (currMode === 'rainbow') {
+                const R = Math.floor(Math.random() * 256)
+                const G = Math.floor(Math.random() * 256)
+                const B = Math.floor(Math.random() * 256)
+                event.target.style.backgroundColor = `rgb(${R}, ${G}, ${B})`;
+            }
+            else if (currMode === 'erase'){event.target.style.backgroundColor = '#ddd'}
+
+        }, false);
     }
   }
 
