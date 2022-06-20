@@ -1,0 +1,66 @@
+:root {
+  background-color: olive;
+}
+h1 {
+  text-align: center;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+}
+
+button {
+  border-radius: 8px;
+  margin-top: 5mm;
+  font-size: 18px;
+  background-color: rgb(144, 178, 75);
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#dimensions {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  text-decoration: wavy;
+  margin-left: 18mm;
+}
+#update-size {
+  -webkit-appearance: none;
+  height: 25px;
+  background: rgb(179, 228, 0);
+  border-radius: 10px;
+  width: 5cm;
+  margin-right: 0%;
+}
+
+#update-size::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 20px;
+  background: yellow;
+}
+#outer-container {
+  display: flex;
+  flex-direction: row;
+}
+#controls {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-left: 1cm;
+}
+#container {
+    display: grid;
+    height: 600px;
+    width: 650px;
+    background-color: #ddd;
+    justify-content: center;
+    margin: auto;
+    margin-left: 3cm;
+    border: 5mm;
+    border-color: darkslategray;
+    border-style: ridge;
+  }
+  
+.grid-item {
+    border: 1px solid #ddd;
+  }
+
